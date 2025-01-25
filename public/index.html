@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Font -->
+    <link rel="stylesheet" href="./font/font-display/stylesheet.css" />
+    <link rel="stylesheet" href="./font/font-involve/stylesheet.css" />
+    <title>Perfect World</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-50 bg-black/80 py-3 lg:pb-[1.125rem] lg:pt-[2.125rem]"
+    >
+      <nav
+        class="flex items-center justify-between gap-x-6 max-w-base mx-auto px-4 lg:px-6"
+      >
+        <div class="flex items-center gap-x-[7.875rem]">
+          <a class="shrink-0" href="#">
+            <img
+              class="h-11 xl:h-[68px]"
+              src="./assets/svg/logo.svg"
+              alt="logo"
+            />
+          </a>
+          <!-- Link -->
+          <div
+            class="hidden lg:flex items-center gap-x-6 lg:gap-x-8 xl:gap-x-20 font-display lg:text-lg xl:text-2xl/[2.265rem] text-white uppercase"
+          >
+            <a
+              class="flex flex-col items-center gap-1 transition duration-300 text-active-menu"
+              href="#"
+            >
+              <span>Главная</span>
+              <div class="one relative"></div>
+            </a>
+            <a
+              class="flex flex-col items-center gap-1 transition duration-300 hover:text-active-menu"
+              href="#"
+            >
+              <span>Об игре</span>
+              <div class="one relative opacity-0"></div>
+            </a>
+            <a
+              class="flex flex-col items-center gap-1 transition duration-300 hover:text-active-menu"
+              href="#"
+            >
+              <span>Медиа</span>
+              <div class="one relative opacity-0"></div>
+            </a>
+          </div>
+        </div>
+        <div>
+          <!-- Button -->
+          <button
+            class="register-btn hidden lg:flex items-center justify-center gap-3 h-12 xl:h-[60px] relative rounded-full overflow-hidden bg-brand-black hover-custom px-5 xl:px-10"
+          >
+            <span
+              class="relative z-10 font-semibold uppercase xl:text-xl/[1.7075rem] text-white"
+              >Предрегистрация</span
+            >
+            <img
+              class="size-full object-cover absolute left-0 top-0 z-0"
+              src="./assets/img/bg-button.png"
+              alt="bg-button"
+            />
+          </button>
+          <!-- Menu Btn -->
+          <button
+            class="lg:hidden text-white transition duration-200 hover:text-active-menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-7"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <section
+        class="relative z-0 bg-cover bg-no-repeat bg-top min-h-screen"
+        style="background-image: url('./assets/img/hero-bg.jpeg')"
+      >
+        <!-- Container -->
+        <div class="relative z-20 max-w-base mx-auto px-4 lg:px-6 py-8">
+          <!-- Content Top -->
+          <div class="flex justify-center mx-auto">
+            <img class="h-40" src="./assets/svg/logo.svg" alt="Logo" />
+          </div>
+          <!-- Content Bottom -->
+          <div class="flex justify-between gap-10 translate-y-[20.5rem]">
+            <!-- 1 -->
+            <div class="custom-card relative w-full max-w-[31.25rem]">
+              <div
+                class="relative z-20 bg-[#050505]/60 flex flex-col justify-center items-center pt-10 pb-[2.125rem] px-8 box-hero"
+              >
+                <div class="w-max">
+                  <h4 class="font-display text-white text-[2.5rem]/[3.775rem]">
+                    Релиз 12 марта
+                  </h4>
+                  <!-- Line -->
+                  <div class="-mx-8 versions relative mt-2"></div>
+                </div>
+                <div class="flex justify-center gap-2 pt-5">
+                  <!-- Version Model 1 -->
+                  <a
+                    class="links-hover flex flex-col items-center justify-center gap-2 w-28 h-24 rounded-lg overflow-hidden bg-black-300/60 border border-brand-gray-700 p-3"
+                    href="#"
+                  >
+                    <img
+                      class="size-7 lg:size-[2.375rem]"
+                      src="./assets/svg/version-1.svg"
+                      alt="Version-1"
+                    />
+                    <span
+                      class="font-manrope font-semibold text-base/[1.3662rem] text-white"
+                      >PC Версия</span
+                    >
+                  </a>
+                  <!-- Version Model 2 -->
+                  <a
+                    class="links-hover flex flex-col items-center justify-center gap-2 w-28 h-24 rounded-lg overflow-hidden bg-black-300/60 border border-brand-gray-700 p-3"
+                    href="#"
+                  >
+                    <img
+                      class="size-7 lg:size-[2.375rem]"
+                      src="./assets/svg/release.svg"
+                      alt="Release"
+                    />
+                    <span
+                      class="font-manrope font-semibold text-base/[1.3662rem] text-white"
+                      >RuStore</span
+                    >
+                  </a>
+                  <!-- Version Model 3 -->
+                  <a
+                    class="links-hover flex flex-col items-center justify-center gap-2 w-28 h-24 rounded-lg overflow-hidden bg-black-300/60 border border-brand-gray-700 p-3"
+                    href="#"
+                  >
+                    <img
+                      class="size-7 lg:size-[2.375rem]"
+                      src="./assets/svg/vk-play.svg"
+                      alt="VK-play"
+                    />
+                    <span
+                      class="font-manrope font-semibold text-base/[1.3662rem] text-white"
+                      >VK Play</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div
+              class="max-w-[28.125rem] w-full flex flex-col items-center pt-6"
+            >
+              <!-- Play Video -->
+              <div
+                class="bg-black-300/60 size-[4.5625rem] rounded-full overflow-hidden p-[0.4375rem] secondary-hover mb-4"
+              >
+                <button
+                  class="videoPlay-btn relative flex items-center justify-center size-full border border-active-menu rounded-full"
+                >
+                  <img
+                    class="ml-1"
+                    src="./assets/svg/video-play.svg"
+                    alt="Play-video"
+                  />
+                </button>
+              </div>
+              <!-- Register -->
+              <button
+                class="register-btn hidden lg:flex items-center justify-center gap-3 xl:w-full h-12 xl:h-[60px] relative rounded-full overflow-hidden bg-brand-black hover-custom px-5 xl:px-10"
+              >
+                <span
+                  class="relative z-10 font-semibold uppercase xl:text-xl/[1.7075rem] text-white"
+                  >Предрегистрация</span
+                >
+                <img
+                  class="size-full object-cover absolute left-0 top-0 z-0"
+                  src="./assets/img/bg-button.png"
+                  alt="bg-button"
+                />
+              </button>
+              <!-- IOS & Android -->
+              <div class="w-full flex justify-between gap-3 translate-y-4">
+                <!-- IOS -->
+                <a
+                  class="w-full max-w-[200px] flex items-center bg-black-300/60 secondary-hover px-5 py-3"
+                  href="#"
+                >
+                  <img
+                    class="w-full h-9"
+                    src="./assets/svg/ios.svg"
+                    alt="IOS"
+                  />
+                </a>
+                <!-- Android -->
+                <a
+                  class="w-full max-w-[15.625rem] flex items-center bg-black-300/60 secondary-hover px-4 py-3"
+                  href="#"
+                >
+                  <img
+                    class="w-full h-12"
+                    src="./assets/svg/andiroid.svg"
+                    alt="Android"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="custom-card relative w-full max-w-[31.25rem]">
+              <div
+                class="relative z-20 bg-[#050505]/60 h-full flex flex-col justify-center items-center pt-10 pb-[2.125rem] px-8 box-hero"
+              >
+                <div class="w-max">
+                  <h4 class="font-display text-white text-[2.5rem]/[3.775rem] xl:text-6xl/[5.6625rem]">
+                    532000
+                  </h4>
+                  <!-- Line -->
+                  <div class="-mx-8 versions relative"></div>
+                </div>
+                <div class="text-center text-white pt-5">
+                  <p class="font-display text-[2rem]/[1.98rem]">Количество <br> предрегистраций</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="size-full absolute inset-0 bg-gradient-to-b from-[#001B36]/60 via-transparent to-[#001B36]/70"
+        ></div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer></footer>
+  </body>
+</html>
