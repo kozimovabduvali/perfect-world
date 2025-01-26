@@ -11,7 +11,7 @@
   }
 
   body {
-    @apply bg-black-200 overflow-x-hidden
+    @apply bg-[#E6EBF0] overflow-x-hidden
   }
 }
 
@@ -38,6 +38,7 @@
 .secondary-hover {
   @apply transition duration-200 ease-in-out hover:shadow-custom
 }
+
 .hover-custom {
   @apply border border-transparent transition duration-200 ease-in-out hover:bg-brand-black-200 hover:border-active-menu hover:shadow-custom
 }
@@ -53,19 +54,24 @@
 }
 
 
+
+.versions {
+  @apply relative w-32 md:w-36 lg:w-56 xl:w-[21.875rem];
+}
+
 .versions:after {
   content: "";
-  height: 2px;
   background: linear-gradient(to right,
       rgba(255, 215, 0, 0) 0%,
       rgba(255, 165, 0, 1) 50%,
       rgba(255, 215, 0, 0) 100%);
   display: block;
+  @apply h-[0.0625rem] lg:h-0.5;
 }
 
 .versions::before {
   content: "";
-  @apply absolute left-1/2 top-1/2 size-1.5 -translate-y-1/2 rotate-45 border-[0.0125rem] border-active-menu bg-white shadow-custom;
+  @apply absolute left-1/2 top-1/2 size-1 lg:size-1.5 -translate-y-1/2 rotate-45 border-[0.0125rem] border-active-menu bg-white shadow-custom;
 }
 
 .box-hero {
@@ -77,19 +83,34 @@
 
 .custom-card::after {
   content: '';
-  @apply absolute z-0 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[calc(100%-14px)] h-[calc(100%-14px)] border border-active-menu
+  @apply hidden xl:block absolute z-0 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[calc(100%-14px)] h-[calc(100%-14px)] border border-active-menu
+}
+
+.custom-card {
+  --mask: radial-gradient(20px at 20px 20px,
+      #0000 calc(98% - 1px),
+      #000 calc(100% - 1px) 98%,
+      #0000) -20px -20px,
+    linear-gradient(90deg, #000 2px, transparent 0) -1px 50% /100% calc(100% - 40px + 1px) repeat-x,
+    linear-gradient(#000 2px, #0000 0) 50% -1px / calc(100% - 40px + 1px) 100% repeat-y;
+
 }
 
 
-
+.custom-card:before {
+  content: "";
+  background: #fbe28a;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  @apply w-[calc(100%-10px)] h-[calc(100%-10px)] block xl:hidden absolute z-30 inset-0 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2
+}
 
 
 /* Play Video Btn */
-
 .videoPlay-btn::after,
 .videoPlay-btn::before {
   content: '';
-  @apply absolute top-1/2 size-1.5 -translate-y-1/2 rotate-45 border-[0.0125rem] border-active-menu bg-white shadow-custom;
+  @apply absolute top-1/2 size-[0.1875rem] xl:size-1.5 -translate-y-1/2 rotate-45 border-[0.0125rem] border-active-menu bg-white shadow-custom;
 }
 
 .videoPlay-btn::after {
