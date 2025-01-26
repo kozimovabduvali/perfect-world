@@ -94,17 +94,19 @@
     <main>
       <!-- Hero -->
       <section
-        class="relative z-0 bg-cover bg-no-repeat bg-top min-h-screen"
+        class="relative z-0 bg-cover bg-no-repeat bg-top"
         style="background-image: url('./assets/img/hero-bg.jpeg')"
       >
         <!-- Container -->
-        <div class="relative z-20 max-w-base mx-auto px-4 lg:px-6 py-8">
+        <div
+          class="relative z-20 max-w-base mx-auto px-4 lg:px-6 pt-8 pb-[15.625rem]"
+        >
           <!-- Content Top -->
           <div class="flex justify-center mx-auto">
             <img class="h-40" src="./assets/svg/logo.svg" alt="Logo" />
           </div>
           <!-- Content Bottom -->
-          <div class="flex justify-between gap-10 translate-y-[20.5rem]">
+          <div class="flex justify-between items-end gap-10 mt-[20.5rem]">
             <!-- 1 -->
             <div class="custom-card relative w-full max-w-[31.25rem]">
               <div
@@ -167,9 +169,7 @@
               </div>
             </div>
             <!-- 2 -->
-            <div
-              class="max-w-[28.125rem] w-full flex flex-col items-center pt-6"
-            >
+            <div class="max-w-[28.125rem] w-full flex flex-col items-center">
               <!-- Play Video -->
               <div
                 class="bg-black-300/60 size-[4.5625rem] rounded-full overflow-hidden p-[0.4375rem] secondary-hover mb-4"
@@ -199,7 +199,7 @@
                 />
               </button>
               <!-- IOS & Android -->
-              <div class="w-full flex justify-between gap-3 translate-y-4">
+              <div class="w-full flex justify-between gap-3 mt-4">
                 <!-- IOS -->
                 <a
                   class="w-full max-w-[200px] flex items-center bg-black-300/60 secondary-hover px-5 py-3"
@@ -230,22 +230,32 @@
                 class="relative z-20 bg-[#050505]/60 h-full flex flex-col justify-center items-center pt-10 pb-[2.125rem] px-8 box-hero"
               >
                 <div class="w-max">
-                  <h4 class="font-display text-white text-[2.5rem]/[3.775rem] xl:text-6xl/[5.6625rem]">
+                  <h4
+                    class="font-display text-white text-[2.5rem]/[3.775rem] xl:text-6xl/[5.6625rem]"
+                  >
                     532000
                   </h4>
                   <!-- Line -->
                   <div class="-mx-8 versions relative"></div>
                 </div>
                 <div class="text-center text-white pt-5">
-                  <p class="font-display text-[2rem]/[1.98rem]">Количество <br> предрегистраций</p>
+                  <p class="font-display text-[2rem]/[1.98rem]">
+                    Количество <br />
+                    предрегистраций
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="size-full absolute inset-0 bg-gradient-to-b from-[#001B36]/60 via-transparent to-[#001B36]/70"
+          class="size-full absolute z-[5] inset-0 bg-gradient-to-b from-[#001B36]/60 via-transparent to-[#001B36]/70"
         ></div>
+        <img
+          class="w-full absolute bottom-0 translate-y-1/3 z-10"
+          src="./assets/svg/hero-bottom.svg"
+          alt=""
+        />
       </section>
     </main>
     <!-- Footer -->
