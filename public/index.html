@@ -1,365 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/styles.css" />
-    <!-- Font -->
-    <link rel="stylesheet" href="./font/font-display/stylesheet.css" />
-    <link rel="stylesheet" href="./font/font-involve/stylesheet.css" />
-    <title>Perfect World</title>
-  </head>
-  <body>
-    <!-- Header -->
-    <header
-      class="sticky top-0 z-50 bg-black/80 py-3 lg:pb-[1.125rem] lg:pt-[2.125rem]"
-    >
-      <nav
-        class="flex items-center justify-between gap-x-6 max-w-base mx-auto px-3.5 lg:px-6"
-      >
-        <div class="flex items-center gap-x-[7.875rem]">
-          <a class="shrink-0" href="#">
-            <img
-              class="h-7 lg:h-11 xl:h-[68px]"
-              src="./assets/svg/logo.svg"
-              alt="logo"
-            />
-          </a>
-          <!-- Link -->
-          <div
-            class="hidden lg:flex items-center gap-x-6 lg:gap-x-8 xl:gap-x-20 font-display lg:text-lg xl:text-2xl/[2.265rem] text-white uppercase"
-          >
-            <a
-              class="flex flex-col items-center gap-1 transition duration-300 text-active-menu"
-              href="#"
-            >
-              <span>Главная</span>
-              <div class="one relative"></div>
-            </a>
-            <a
-              class="flex flex-col items-center gap-1 transition duration-300 hover:text-active-menu"
-              href="#"
-            >
-              <span>Об игре</span>
-              <div class="one relative opacity-0"></div>
-            </a>
-            <a
-              class="flex flex-col items-center gap-1 transition duration-300 hover:text-active-menu"
-              href="#"
-            >
-              <span>Медиа</span>
-              <div class="one relative opacity-0"></div>
-            </a>
-          </div>
-        </div>
-        <div>
-          <!-- Button -->
-          <button
-            class="register-btn hidden lg:flex items-center justify-center gap-3 h-12 xl:h-[60px] relative rounded-full overflow-hidden bg-brand-black hover-custom px-5 xl:px-10"
-          >
-            <span
-              class="relative z-10 font-semibold uppercase xl:text-xl/[1.7075rem] text-white"
-              >Предрегистрация</span
-            >
-            <img
-              class="size-full object-cover absolute left-0 top-0 z-0"
-              src="./assets/img/bg-button.png"
-              alt="bg-button"
-            />
-          </button>
-          <!-- Menu Btn -->
-          <button
-            class="lg:hidden text-white transition duration-200 hover:text-active-menu"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-7"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
-          </button>
-        </div>
-      </nav>
-    </header>
-    <!-- Main -->
-    <main>
-      <!-- Hero -->
-      <section
-        class="relative z-0 bg-cover bg-no-repeat bg-top"
-        style="background-image: url('./assets/img/hero-bg.jpeg')"
-      >
-        <!-- Container -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <!-- Font -->
+  <link rel="stylesheet" href="./font/font-display/stylesheet.css" />
+  <link rel="stylesheet" href="./font/font-involve/stylesheet.css" />
+  <title>Perfect World</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-black/80 py-3 lg:pb-[1.125rem] lg:pt-[2.125rem]">
+    <nav class="flex items-center justify-between gap-x-6 max-w-base mx-auto px-3.5 lg:px-6">
+      <div class="flex items-center gap-x-[7.875rem]">
+        <a class="shrink-0" href="#">
+          <img class="h-7 lg:h-11 xl:h-[68px]" src="./assets/svg/logo.svg" alt="logo" />
+        </a>
+        <!-- Link -->
         <div
-          class="relative z-20 max-w-base mx-auto px-3.5 lg:px-6 pt-2.5 lg:pt-8 xl:pb-[15.625rem]"
-        >
-          <!-- Content Top -->
-          <div class="flex justify-center mx-auto">
-            <img
-              class="h-[3.3125rem] md:h-20 lg:h-28 xl:h-40"
-              src="./assets/svg/logo.svg"
-              alt="Logo"
-            />
+          class="hidden lg:flex items-center gap-x-6 lg:gap-x-8 xl:gap-x-20 font-display lg:text-lg xl:text-2xl/[2.265rem] text-white uppercase">
+          <a class="flex flex-col items-center gap-1 transition duration-300 text-active-menu" href="#">
+            <span>Главная</span>
+            <div class="one relative"></div>
+          </a>
+          <a class="flex flex-col items-center gap-1 transition duration-300 hover:text-active-menu" href="#">
+            <span>Об игре</span>
+            <div class="one relative opacity-0"></div>
+          </a>
+          <a class="flex flex-col items-center gap-1 transition duration-300 hover:text-active-menu" href="#">
+            <span>Медиа</span>
+            <div class="one relative opacity-0"></div>
+          </a>
+        </div>
+      </div>
+      <div>
+        <!-- Button -->
+        <button
+          class="register-btn hidden lg:flex items-center justify-center gap-3 h-12 xl:h-[60px] relative rounded-full overflow-hidden bg-brand-black hover-custom px-5 xl:px-10">
+          <span class="relative z-10 font-semibold uppercase xl:text-xl/[1.7075rem] text-white">Предрегистрация</span>
+          <img class="size-full object-cover absolute left-0 top-0 z-0" src="./assets/img/bg-button.png"
+            alt="bg-button" />
+        </button>
+        <!-- Menu Btn -->
+        <button class="lg:hidden text-white transition duration-200 hover:text-active-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-7">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+    <section class="relative z-0 bg-cover bg-no-repeat bg-top"
+      style="background-image: url('./assets/img/hero-bg.jpeg')">
+      <!-- Container -->
+      <div class="relative z-20 max-w-base mx-auto px-3.5 lg:px-6 pt-2.5 lg:pt-8 xl:pb-[15.625rem]">
+        <!-- Content Top -->
+        <div class="flex justify-center mx-auto">
+          <img class="h-[3.3125rem] md:h-20 lg:h-28 xl:h-40" src="./assets/svg/logo.svg" alt="Logo" />
+        </div>
+        <!-- Content Bottom -->
+        <div
+          class="flex flex-col xl:flex-row xl:justify-between items-center xl:items-end gap-y-2.5 gap-x-6 2xl:gap-x-10 mt-40 lg:mt-60 xl:mt-[20.5rem]">
+          <!-- Mobile 2 -->
+          <div class="max-w-[16.875rem]  mx-auto w-full xl:hidden flex flex-col items-center">
+            <div class="flex items-end">
+              <img class="h-5 xl:h-[1.875rem]" src="./assets/svg/embroidery.svg" alt="Embroidery" />
+              <!-- Play Video -->
+              <div class="shrink-0 bg-black-300/60 size-14 rounded-full overflow-hidden p-[0.4375rem] secondary-hover">
+                <button
+                  class="videoPlay-btn relative flex items-center justify-center size-full border border-active-menu rounded-full">
+                  <img class="ml-1 size-5" src="./assets/svg/video-play.svg" alt="Play-video" />
+                </button>
+              </div>
+              <img class="h-5 xl:h-[1.875rem]" src="./assets/svg/embroidery-right.svg" alt="Embroidery" />
+            </div>
+            <!-- IOS & Android -->
+            <div class="w-full mx-auto flex justify-center gap-3 mt-2">
+              <!-- IOS -->
+              <a class="w-full max-w-[200px] flex items-center bg-black-300/60 secondary-hover px-4 py-2" href="#">
+                <img class="w-full h-5" src="./assets/svg/ios.svg" alt="IOS" />
+              </a>
+              <!-- Android -->
+              <a class="w-full max-w-[15.625rem] flex items-center bg-black-300/60 secondary-hover px-4 py-2" href="#">
+                <img class="w-full h-7" src="./assets/svg/andiroid.svg" alt="Android" />
+              </a>
+            </div>
           </div>
-          <!-- Content Bottom -->
-          <div
-            class="flex flex-col xl:flex-row xl:justify-between items-center xl:items-end gap-y-2.5 gap-x-6 2xl:gap-x-10 mt-40 lg:mt-60 xl:mt-[20.5rem]"
-          >
-            <!-- Mobile 2 -->
-            <div class="max-w-[16.875rem]  mx-auto w-full xl:hidden flex flex-col items-center">
-              <div class="flex items-end">
-                <img
-                  class="h-5 xl:h-[1.875rem]"
-                  src="./assets/svg/embroidery.svg"
-                  alt="Embroidery"
-                />
-                <!-- Play Video -->
-                <div
-                  class="shrink-0 bg-black-300/60 size-14 rounded-full overflow-hidden p-[0.4375rem] secondary-hover"
-                >
-                  <button
-                    class="videoPlay-btn relative flex items-center justify-center size-full border border-active-menu rounded-full"
-                  >
-                    <img
-                      class="ml-1 size-5"
-                      src="./assets/svg/video-play.svg"
-                      alt="Play-video"
-                    />
-                  </button>
-                </div>
-                <img
-                  class="h-5 xl:h-[1.875rem]"
-                  src="./assets/svg/embroidery-right.svg"
-                  alt="Embroidery"
-                />
-              </div>
-              <!-- IOS & Android -->
-              <div class="w-full mx-auto flex justify-center gap-3 mt-2">
-                <!-- IOS -->
-                <a
-                  class="w-full max-w-[200px] flex items-center bg-black-300/60 secondary-hover px-4 py-2"
-                  href="#"
-                >
-                  <img
-                    class="w-full h-5"
-                    src="./assets/svg/ios.svg"
-                    alt="IOS"
-                  />
-                </a>
-                <!-- Android -->
-                <a
-                  class="w-full max-w-[15.625rem] flex items-center bg-black-300/60 secondary-hover px-4 py-2"
-                  href="#"
-                >
-                  <img
-                    class="w-full h-7"
-                    src="./assets/svg/andiroid.svg"
-                    alt="Android"
-                  />
-                </a>
-              </div>
-            </div>
-            <!-- 1 -->
-            <div class="custom-card relative w-full xl:max-w-[31.25rem]">
-              <div
-                class="relative z-40 grid grid-cols-2 gap-4 divide-x-[0.0313rem] divide-white xl:block py-5 xl:pt-10 xl:pb-[2.125rem] px-8"
-              >
-                <div class="flex flex-col justify-center items-center">
-                  <div class="text-center">
-                    <h4
-                      class="font-display text-white text-sm md:text-xl lg:text-3xl 2xl:text-[2.5rem]/[3.775rem]"
-                    >
-                      Релиз 12 марта
-                    </h4>
-                    <!-- Line -->
-                    <div class="-mx-4 lg:-mx-8 versions relative mt-2"></div>
-                  </div>
-                  <div
-                    class="max-w-40 md:max-w-80 lg:max-w-[21.875rem] mx-auto grid grid-cols-3 gap-0.5 lg:gap-2 pt-5"
-                  >
-                    <!-- Version Model 1 -->
-                    <a
-                      class="whitespace-nowrap links-hover flex flex-col items-center justify-center gap-0.5 lg:gap-2 rounded-lg overflow-hidden bg-black-300/60 border border-brand-gray-700 p-2 lg:p-3"
-                      href="#"
-                    >
-                      <img
-                        class="size-3.5 lg:size-6 xl:size-[2.375rem]"
-                        src="./assets/svg/version-1.svg"
-                        alt="Version-1"
-                      />
-                      <span
-                        class="font-manrope font-semibold text-[0.4375rem] md:text-xs xl:text-base/[1.3662rem] text-white"
-                        >PC Версия</span
-                      >
-                    </a>
-                    <!-- Version Model 2 -->
-                    <a
-                      class="whitespace-nowrap links-hover flex flex-col items-center justify-center gap-0.5 lg:gap-2 rounded-lg overflow-hidden bg-black-300/60 border border-brand-gray-700 p-2 lg:p-3"
-                      href="#"
-                    >
-                      <img
-                        class="size-3.5 lg:size-6 xl:size-[2.375rem]"
-                        src="./assets/svg/release.svg"
-                        alt="Release"
-                      />
-                      <span
-                        class="font-manrope font-semibold text-[0.4375rem] md:text-xs xl:text-base/[1.3662rem] text-white"
-                        >RuStore</span
-                      >
-                    </a>
-                    <!-- Version Model 3 -->
-                    <a
-                      class="whitespace-nowrap links-hover flex flex-col items-center justify-center gap-0.5 lg:gap-2 rounded-lg overflow-hidden bg-black-300/60 border border-brand-gray-700 p-2 lg:p-3"
-                      href="#"
-                    >
-                      <img
-                        class="size-3.5 lg:size-6 xl:size-[2.375rem]"
-                        src="./assets/svg/vk-play.svg"
-                        alt="VK-play"
-                      />
-                      <span
-                        class="font-manrope font-semibold text-[0.4375rem] md:text-xs xl:text-base/[1.3662rem] text-white"
-                        >VK Play</span
-                      >
-                    </a>
-                  </div>
-                </div>
-                <!-- Mobile 3 -->
-                <div class="flex flex-col items-center xl:hidden">
-                  <div class="w-max text-center">
-                    <h4
-                      class="font-display text-white text-xl/[1.9375rem] md:text-3xl lg:text-[2.5rem]/[3.775rem] 2xl:text-6xl/[5.6625rem]"
-                    >
-                      532000
-                    </h4>
-                    <!-- Line -->
-                    <div class="-mx-4 lg:-mx-8 versions relative mt-2"></div>
-                  </div>
-                  <div class="text-center text-white pt-2 lg:pt-5">
-                    <p class="font-display text-xs md:text-sm lg:text-lg">
-                      Количество <br />
-                      предрегистраций
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="absolute size-full inset-0 z-20 bg-[#050505]/60 box-hero"
-              ></div>
-            </div>
-            <!-- 2 -->
-            <div class="max-w-[28.125rem] w-full flex flex-col items-center mt-2 xl:mt-0">
-              <div class="hidden xl:flex items-center">
-                <img
-                  class="h-5 lg:h-[1.875rem]"
-                  src="./assets/svg/embroidery.svg"
-                  alt="Embroidery"
-                />
-                <!-- Play Video -->
-                <div
-                  class="shrink-0 bg-black-300/60 size-[4.5625rem] rounded-full overflow-hidden p-[0.4375rem] secondary-hover mb-4"
-                >
-                  <button
-                    class="videoPlay-btn relative flex items-center justify-center size-full border border-active-menu rounded-full"
-                  >
-                    <img
-                      class="ml-1"
-                      src="./assets/svg/video-play.svg"
-                      alt="Play-video"
-                    />
-                  </button>
-                </div>
-                <img
-                  class="h-5 lg:h-[1.875rem]"
-                  src="./assets/svg/embroidery-right.svg"
-                  alt="Embroidery"
-                />
-              </div>
-              <!-- Register -->
-              <button
-                class="register-btn flex items-center justify-center gap-3 xs:max-w-[16.875rem] xl:max-w-full w-full h-[60px] relative rounded-full overflow-hidden bg-brand-black hover-custom px-5 xl:px-10"
-              >
-                <span
-                  class="relative z-10 font-semibold uppercase text-lg xl:text-xl/[1.7075rem] text-white"
-                  >Предрегистрация</span
-                >
-                <img
-                  class="size-full object-cover absolute left-0 top-0 z-0"
-                  src="./assets/img/bg-button.png"
-                  alt="bg-button"
-                />
-              </button>
-              <!-- IOS & Android -->
-              <div class="w-full hidden xl:flex justify-between gap-3 mt-4">
-                <!-- IOS -->
-                <a
-                  class="w-full max-w-[200px] flex items-center bg-black-300/60 secondary-hover px-5 py-3"
-                  href="#"
-                >
-                  <img
-                    class="w-full h-9"
-                    src="./assets/svg/ios.svg"
-                    alt="IOS"
-                  />
-                </a>
-                <!-- Android -->
-                <a
-                  class="w-full max-w-[15.625rem] flex items-center bg-black-300/60 secondary-hover px-4 py-3"
-                  href="#"
-                >
-                  <img
-                    class="w-full h-12"
-                    src="./assets/svg/andiroid.svg"
-                    alt="Android"
-                  />
-                </a>
-              </div>
-            </div>
-            <!-- 3 -->
+          <!-- 1 -->
+          <div class="custom-card relative w-full xl:max-w-[31.25rem]">
             <div
-              class="hidden xl:block custom-card relative w-full max-w-[31.25rem] xl:min-h-[14.75rem]"
-            >
-              <div
-                class="relative z-20 bg-[#050505]/60 h-full xl:min-h-[14.75rem] flex flex-col justify-center items-center pt-10 pb-[2.125rem] px-8 box-hero"
-              >
+              class="relative z-40 grid grid-cols-2 gap-4 divide-x-[0.0313rem] divide-white xl:block py-5 xl:pt-10 xl:pb-[2.125rem] px-8">
+              <div class="flex flex-col justify-center items-center">
+                <div class="text-center">
+                  <h4 class="font-display text-white text-sm md:text-xl lg:text-3xl 2xl:text-[2.5rem]/[3.775rem]">
+                    Релиз 12 марта
+                  </h4>
+                  <!-- Line -->
+                  <div class="-mx-4 lg:-mx-8 versions relative mt-2"></div>
+                </div>
+                <div class="max-w-40 md:max-w-80 lg:max-w-[21.875rem] mx-auto grid grid-cols-3 gap-0.5 lg:gap-2 pt-5">
+                  <!-- Version Model 1 -->
+                  <a class="whitespace-nowrap links-hover flex flex-col items-center justify-center gap-0.5 lg:gap-2 rounded-lg overflow-hidden bg-black-300/60 border border-brand-gray-700 p-2 lg:p-3"
+                    href="#">
+                    <img class="size-3.5 lg:size-6 xl:size-[2.375rem]" src="./assets/svg/version-1.svg"
+                      alt="Version-1" />
+                    <span
+                      class="font-manrope font-semibold text-[0.4375rem] md:text-xs xl:text-base/[1.3662rem] text-white">PC
+                      Версия</span>
+                  </a>
+                  <!-- Version Model 2 -->
+                  <a class="whitespace-nowrap links-hover flex flex-col items-center justify-center gap-0.5 lg:gap-2 rounded-lg overflow-hidden bg-black-300/60 border border-brand-gray-700 p-2 lg:p-3"
+                    href="#">
+                    <img class="size-3.5 lg:size-6 xl:size-[2.375rem]" src="./assets/svg/release.svg" alt="Release" />
+                    <span
+                      class="font-manrope font-semibold text-[0.4375rem] md:text-xs xl:text-base/[1.3662rem] text-white">RuStore</span>
+                  </a>
+                  <!-- Version Model 3 -->
+                  <a class="whitespace-nowrap links-hover flex flex-col items-center justify-center gap-0.5 lg:gap-2 rounded-lg overflow-hidden bg-black-300/60 border border-brand-gray-700 p-2 lg:p-3"
+                    href="#">
+                    <img class="size-3.5 lg:size-6 xl:size-[2.375rem]" src="./assets/svg/vk-play.svg" alt="VK-play" />
+                    <span
+                      class="font-manrope font-semibold text-[0.4375rem] md:text-xs xl:text-base/[1.3662rem] text-white">VK
+                      Play</span>
+                  </a>
+                </div>
+              </div>
+              <!-- Mobile 3 -->
+              <div class="flex flex-col items-center xl:hidden">
                 <div class="w-max text-center">
                   <h4
-                    class="font-display text-white text-[2.5rem]/[3.775rem] 2xl:text-6xl/[5.6625rem]"
-                  >
+                    class="font-display text-white text-xl/[1.9375rem] md:text-3xl lg:text-[2.5rem]/[3.775rem] 2xl:text-6xl/[5.6625rem]">
                     532000
                   </h4>
                   <!-- Line -->
-                  <div class="-mx-8 versions relative"></div>
+                  <div class="-mx-4 lg:-mx-8 versions relative mt-2"></div>
                 </div>
-                <div class="text-center text-white pt-5">
-                  <p class="font-display 2xl:text-[2rem]/[1.98rem]">
+                <div class="text-center text-white pt-2 lg:pt-5">
+                  <p class="font-display text-xs md:text-sm lg:text-lg">
                     Количество <br />
                     предрегистраций
                   </p>
                 </div>
               </div>
             </div>
+            <div class="absolute size-full inset-0 z-20 bg-[#050505]/60 box-hero"></div>
+          </div>
+          <!-- 2 -->
+          <div class="max-w-[28.125rem] w-full flex flex-col items-center mt-2 xl:mt-0">
+            <div class="hidden xl:flex items-center">
+              <img class="h-5 lg:h-[1.875rem]" src="./assets/svg/embroidery.svg" alt="Embroidery" />
+              <!-- Play Video -->
+              <div
+                class="shrink-0 bg-black-300/60 size-[4.5625rem] rounded-full overflow-hidden p-[0.4375rem] secondary-hover mb-4">
+                <button
+                  class="videoPlay-btn relative flex items-center justify-center size-full border border-active-menu rounded-full">
+                  <img class="ml-1" src="./assets/svg/video-play.svg" alt="Play-video" />
+                </button>
+              </div>
+              <img class="h-5 lg:h-[1.875rem]" src="./assets/svg/embroidery-right.svg" alt="Embroidery" />
+            </div>
+            <!-- Register -->
+            <button
+              class="register-btn flex items-center justify-center gap-3 xs:max-w-[16.875rem] xl:max-w-full w-full h-[60px] relative rounded-full overflow-hidden bg-brand-black hover-custom px-5 xl:px-10">
+              <span
+                class="relative z-10 font-semibold uppercase text-lg xl:text-xl/[1.7075rem] text-white">Предрегистрация</span>
+              <img class="size-full object-cover absolute left-0 top-0 z-0" src="./assets/img/bg-button.png"
+                alt="bg-button" />
+            </button>
+            <!-- IOS & Android -->
+            <div class="w-full hidden xl:flex justify-between gap-3 mt-4">
+              <!-- IOS -->
+              <a class="w-full max-w-[200px] flex items-center bg-black-300/60 secondary-hover px-5 py-3" href="#">
+                <img class="w-full h-9" src="./assets/svg/ios.svg" alt="IOS" />
+              </a>
+              <!-- Android -->
+              <a class="w-full max-w-[15.625rem] flex items-center bg-black-300/60 secondary-hover px-4 py-3" href="#">
+                <img class="w-full h-12" src="./assets/svg/andiroid.svg" alt="Android" />
+              </a>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="hidden xl:block custom-card relative w-full max-w-[31.25rem] xl:min-h-[14.75rem]">
+            <div
+              class="relative z-20 bg-[#050505]/60 h-full xl:min-h-[14.75rem] flex flex-col justify-center items-center pt-10 pb-[2.125rem] px-8 box-hero">
+              <div class="w-max text-center">
+                <h4 class="font-display text-white text-[2.5rem]/[3.775rem] 2xl:text-6xl/[5.6625rem]">
+                  532000
+                </h4>
+                <!-- Line -->
+                <div class="-mx-8 versions relative"></div>
+              </div>
+              <div class="text-center text-white pt-5">
+                <p class="font-display 2xl:text-[2rem]/[1.98rem]">
+                  Количество <br />
+                  предрегистраций
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div
-          class="size-full absolute z-[5] inset-0 bg-gradient-to-b from-[#001B36]/60 via-transparent to-[#001B36]/70"
-        ></div>
-        <img
-          class="w-full absolute bottom-0 sm:translate-y-[35%] z-10"
-          src="./assets/svg/hero-bottom.svg"
-          alt=""
-        />
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer></footer>
-  </body>
+      </div>
+      <div class="size-full absolute z-[5] inset-0 bg-gradient-to-b from-[#001B36]/60 via-transparent to-[#001B36]/70">
+      </div>
+      <img class="w-full absolute bottom-0 sm:translate-y-[35%] z-10" src="./assets/svg/hero-bottom.svg" alt="" />
+    </section>
+    <!-- Product -->
+    <section class="relative overflow-x-clip z-30 pt-16">
+      <div class="relative z-20 max-w-base mx-auto px-3.5 lg:px-6">
+        <div class="flex flex-col items-center gap-2 text-center">
+          <h2
+            class="font-display font-bold text-2xl md:text-4xl lg:text-[3.125rem]/[4.375rem] text-base-blue uppercase">
+            Награды предрегистрации</h2>
+          <img class="h-3 md:h-5 lg:h-[30px]" src="./assets/svg/headline-decoration.svg" alt="Headline Decoration">
+        </div>
+        <!-- Product Cards -->
+        <div class="mt-4 lg:mt-6">
+          <!-- Product 1 -->
+          <div class="product-card w-[15.625rem] h-80 relative">
+            <a href="#" class="relative group z-20 size-full flex items-center justify-center p-4">
+              <div class="absolute top-0 -translate-y-1/2 bg-[#050505]/60 w-40 h-[4.3125rem] rounded-full p-1">
+                <div
+                  class="relative size-full product-cost flex items-center justify-center border border-active-menu rounded-full">
+                  <span class="text-[2rem]/[2.7319rem] text-white">100 тыс</span>
+                </div>
+              </div>
+              <img class="size-16 md:size-20 lg:size-28 xl:size-40 transition duration-200 group-hover:scale-110"
+                src="./assets/img/product-image.png" alt="Product Image">
+              <div class="z-10 bottom-0">
+                <img class="absolute z-10 left-0 bottom-0" src="./assets/img/lenta-center.png" alt="Lenta Center">
+              </div>
+            </a>
+            <div class="product-card__box absolute inset-0 z-0 size-full bg-[#D9D9D9]">
+              <img class="size-full object-cover" src="./assets/img/product-bg.png" alt="Product BG">
+            </div>
+          </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div>
+          <div class="flex justify-between font-manrope md:text-xl lg:text-[1.75rem]/[2.45rem] text-base-blue mt-7">
+            <span>Количество предрегистраций:</span>
+            <span class="font-bold text-xl lg:text-[1.75rem]/[2.45rem]">500,233%</span>
+          </div>
+          <div class="shadow-custom__range w-full bg-gray-200 rounded h-5 mt-2.5">
+            <div class="relative bg-gradient-to-r from-[#A1CAF2] to-[#2C85DE] h-full rounded" style="width: 100%">
+              <!-- Progress Cursor -->
+              <button class="profress-cursor__btn absolute right-0 w-2 h-full bg-white rounded"></button>
+            </div>
+          </div>
+          <!-- Register -->
+          <button
+            class="register-btn flex items-center justify-center gap-3 xs:max-w-[21.875rem] w-full h-[60px] relative rounded-full overflow-hidden bg-brand-black hover-custom px-5 xl:px-10 mx-auto mt-6 lg:mt-10">
+            <span
+              class="relative z-10 font-semibold uppercase text-lg xl:text-xl/[1.7075rem] text-white">Предрегистрация</span>
+            <img class="size-full object-cover absolute left-0 top-0 z-0" src="./assets/img/bg-button.png"
+              alt="bg-button" />
+          </button>
+        </div>
+      </div>
+      <img class="absolute top-0 z-0 translate-y-1/2 w-full" src="./assets/svg/lenta-product.svg" alt="Lenta Product">
+    </section>
+
+    <!-- About The Game -->
+    <section class="relative">
+      <div class="max-w-[28.125rem] mx-auto px-3.5 lg:px-6"></div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
 </html>

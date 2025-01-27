@@ -93,7 +93,6 @@
       #0000) -20px -20px,
     linear-gradient(90deg, #000 2px, transparent 0) -1px 50% /100% calc(100% - 40px + 1px) repeat-x,
     linear-gradient(#000 2px, #0000 0) 50% -1px / calc(100% - 40px + 1px) 100% repeat-y;
-
 }
 
 
@@ -104,8 +103,6 @@
   mask: var(--mask);
   @apply w-[calc(100%-10px)] h-[calc(100%-10px)] block xl:hidden absolute z-30 inset-0 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2
 }
-
-
 /* Play Video Btn */
 .videoPlay-btn::after,
 .videoPlay-btn::before {
@@ -121,4 +118,41 @@
 .videoPlay-btn::before {
   content: '';
   @apply absolute right-0 translate-x-1/2;
+}
+
+
+/* Product */
+
+.product-card::after {
+  content: '';
+  @apply absolute z-0 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[calc(100%-10px)] h-[calc(100%-10px)] border border-active-menu
+}
+
+.product-card__box {
+  --mask: radial-gradient(18px at 18px 18px, #0000 98%, #000) -18px -18px;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+
+
+
+.product-cost::after,
+.product-cost::before {
+  content: '';
+  @apply absolute top-1/2 size-1 -translate-y-1/2 rotate-45 border-[0.0125rem] border-active-menu bg-white shadow-custom;
+}
+
+.product-cost::after {
+  content: '';
+  @apply absolute left-0 -translate-x-1/2;
+}
+
+.product-cost::before {
+  content: '';
+  @apply absolute right-0 translate-x-1/2;
+}
+
+.shadow-custom__range {
+  box-shadow: 0px 0px 5.4px 0px #00C8FF;
 }

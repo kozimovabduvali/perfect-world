@@ -23,6 +23,7 @@ module.exports = {
         black: '#000000',
         'black-200': '#171717',
         'black-300': '#050505',
+        'base-blue': '#335B82',
         white: '#FFFFFF',
         'active-menu': '#FBE28A',
         brand: {
