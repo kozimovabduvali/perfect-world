@@ -175,7 +175,7 @@
   background: #fbe28a;
   -webkit-mask: var(--mask);
   mask: var(--mask);
-  @apply w-[calc(100%-24px)] h-[calc(100%-24px)] absolute !z-0 inset-0 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2
+  @apply w-[calc(100%-24px)] h-[calc(100%-24px)] absolute !z-10 inset-0 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2
 }
 
 .shadow-custom__drop {
