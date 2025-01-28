@@ -235,10 +235,10 @@
               <img class="size-16 md:size-20 lg:size-28 xl:size-40 transition duration-200 group-hover:scale-110"
                 src="./assets/img/product-image.png" alt="Product Image">
               <div class="z-10 bottom-0">
-                <img class="absolute z-10 left-0 bottom-0" src="./assets/img/lenta-center.png" alt="Lenta Center">
+                <!-- <img class="absolute z-10 left-0 bottom-0" src="./assets/img/lenta-center.png" alt="Lenta Center"> -->
               </div>
             </a>
-            <div class="product-card__box absolute inset-0 z-0 size-full bg-[#D9D9D9]">
+            <div class="product-card__box absolute inset-0 z-10 size-full bg-[#D9D9D9]">
               <img class="size-full object-cover" src="./assets/img/product-bg.png" alt="Product BG">
             </div>
           </div>
@@ -270,12 +270,95 @@
     </section>
 
     <!-- About The Game -->
-    <section class="relative">
-      <div class="max-w-[28.125rem] mx-auto px-3.5 lg:px-6"></div>
+    <section class="relative pt-[4.5625rem] lg:pt-32">
+      <div class="max-w-base mx-auto px-3.5 lg:px-6">
+        <div class="relative">
+          <div class="relative size-full about-box__border pt-7 pb-5 lg:py-14 px-8 lg:px-10 xl:px-[4.25rem]">
+            <div class="relative z-10 flex items-center justify-center gap-0.5">
+              <img class="h-3 md:h-5 lg:h-[30px]" src="./assets/svg/heading-line.svg" alt="">
+              <h2
+                class="font-display font-bold text-2xl md:text-4xl lg:text-[3.125rem]/[4.375rem] text-white uppercase">
+                об игре</h2>
+              <img class="h-3 md:h-5 lg:h-[30px]" src="./assets/svg/heading-line__right.svg" alt="">
+            </div>
+            <!-- Slider & Content -->
+            <div
+              class="relative z-20 grid lg:grid-cols-2 gap-y-4 md:gap-y-6 gap-x-6 2xl:gap-x-11 pt-6 md:pt-8 2xl:pt-12">
+              <!-- Slider -->
+              <div class="shadow-custom__drop">
+                <div class="Slider h-64 md:h-80 lg:h-96 xl:h-[28.125rem] overflow-hidden">
+                  <div class="Slider-wrapper flex">
+                    <div class="slide-content h-64 md:h-80 lg:h-96 xl:h-[28.125rem] overflow-hidden active">
+                      <img class="size-full object-cover object-center" src="./assets/img/about-game__slider.png"
+                        alt="About Game Slider">
+                    </div>
+                    <div class="slide-content h-64 md:h-80 lg:h-96 xl:h-[28.125rem] overflow-hidden">
+                      <img class="size-full object-cover object-center" src="./assets/img/image-product.png"
+                        alt="About Game Slider">
+                    </div>
+                    <div class="slide-content h-64 md:h-80 lg:h-96 xl:h-[28.125rem] overflow-hidden">
+                      <img class="size-full object-cover object-center" src="./assets/img/image-product-2.png"
+                        alt="About Game Slider">
+                    </div>
+                    <div class="slide-content h-64 md:h-80 lg:h-96 xl:h-[28.125rem] overflow-hidden">
+                      <img class="size-full object-cover object-center" src="./assets/img/image-product.png"
+                        alt="About Game Slider">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Content -->
+              <div class="font-manrope text-white">
+                <h3 class="font-bold text-2xl md:text-3xl lg:text-[2.5rem]/[2.1rem] text-center lg:text-left">
+                  Очень крутой заголовок
+                </h3>
+                <p class="text-[0.9375rem]/[1.3125rem] xl:text-xl mt-4 lg:mt-5">
+                  Присоединяйтесь к игрокам по всему миру на одном сервере. Переключайтесь между ландшафтным
+                  и портретным режимами по желанию. Последний шедевр 20-летней классики IP «Perfect World» теперь
+                  официально выпущен по всему миру! <br><br>
+                  Perfect World: Ascend предлагает по‑настоящему открытый 3D-мир с высокой степенью свободы
+                  и разнообразным игровым процессом. Выбирайте из множества интересных профессий и участвуйте
+                  в захватывающих межсерверных сражениях.
+                </p>
+              </div>
+            </div>
+            <!-- Next & Prev & Pagination -->
+            <div class="flex 2xl:block items-center justify-center gap-x-8 pt-7 lg:pt-9 2xl:pt-12">
+              <!-- Prev -->
+              <div
+                class="select-none prev cursor-pointer 2xl:absolute z-30 2xl:-translate-x-1/2 left-0 top-1/2 2xl:-translate-y-1/2 !shrink-0 bg-black-300/60 size-[3.125rem] lg:size-16 2xl:size-[5.625rem] rounded-full overflow-hidden p-[0.4375rem] transition duration-200 ease-in-out hover:shadow-custom">
+                <div class="relative flex items-center justify-center size-full border border-active-menu rounded-full">
+                  <img class="w-4 lg:w-5 h-5 lg:h-6 xl:w-[1.875rem] xl:h-9" src="./assets/svg/prev.svg" alt="Prev" />
+                </div>
+              </div>
+
+              <!-- Pagination -->
+              <div class="pagination hidden xl:flex items-center justify-center space-x-3 mt-8">
+              </div>
+              <!-- Pagination Mobile -->
+              <div class="pagination-mobile flex 2xl:hidden py-5 xl:mt-8 h-max">
+              </div>
+              <!-- Next -->
+              <div
+                class="select-none next cursor-pointer 2xl:absolute z-30 2xl:translate-x-1/2 right-0 top-1/2 2xl:-translate-y-1/2 !shrink-0 bg-black-300/60 size-[3.125rem] lg:size-16 2xl:size-[5.625rem] rounded-full overflow-hidden p-[0.4375rem] transition duration-200 ease-in-out hover:shadow-custom">
+                <div class="relative flex items-center justify-center size-full border border-active-menu rounded-full">
+                  <img class="w-4 lg:w-5 h-5 lg:h-6 xl:w-[1.875rem] xl:h-9 rotate-180" src="./assets/svg/prev.svg"
+                    alt="Prev" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="absolute inset-0 -z-10 about-box bg-cover size-full"
+            style="background-image: url('./assets/img/about-game__bg.png');">
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <!-- Footer -->
   <footer></footer>
+  <!-- Scripts -->
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

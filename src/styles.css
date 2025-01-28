@@ -103,6 +103,7 @@
   mask: var(--mask);
   @apply w-[calc(100%-10px)] h-[calc(100%-10px)] block xl:hidden absolute z-30 inset-0 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2
 }
+
 /* Play Video Btn */
 .videoPlay-btn::after,
 .videoPlay-btn::before {
@@ -122,7 +123,6 @@
 
 
 /* Product */
-
 .product-card::after {
   content: '';
   @apply absolute z-0 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[calc(100%-10px)] h-[calc(100%-10px)] border border-active-menu
@@ -133,8 +133,6 @@
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
-
-
 
 
 .product-cost::after,
@@ -155,4 +153,96 @@
 
 .shadow-custom__range {
   box-shadow: 0px 0px 5.4px 0px #00C8FF;
+}
+
+/* About The Game */
+.about-box {
+  --mask: radial-gradient(25px at 25px 25px, #0000 98%, #000) -25px -25px;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.about-box__border {
+  --mask:
+    radial-gradient(25px at 25px 25px, #0000 calc(98% - 1px), #000 calc(100% - 1px) 98%, #0000) -25px -25px,
+    linear-gradient(90deg, #000 2px, #0000 0) -1px 50% /100% calc(100% - 50px + 1px) repeat-x,
+    linear-gradient(#000 2px, #0000 0) 50% -1px/calc(100% - 50px + 1px) 100% repeat-y;
+
+}
+
+.about-box__border::before {
+  content: "";
+  background: #fbe28a;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  @apply w-[calc(100%-24px)] h-[calc(100%-24px)] absolute !z-0 inset-0 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2
+}
+
+.shadow-custom__drop {
+  box-shadow: 0px 0px 30.6px 0px #FBE28A;
+}
+
+.shadow-custom__drop::before {
+  content: '';
+  @apply absolute
+}
+
+
+/* Slider */
+.Slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.Slider-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.slide-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f3f3;
+  color: #333;
+  font-size: 24px;
+  z-index: 0;
+}
+
+.slide-content.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+/* Pagination */
+
+.pagination .dot {
+  transition: background-color 0.3s;
+  @apply cursor-pointer rotate-45 size-4 border border-white bg-transparent
+}
+
+.pagination .dot.active {
+  background-color: #007bff;
+  @apply bg-white shadow-custom cursor-default
+}
+
+/* Mobile Pagination */
+.pagination-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-mobile .mobile-text {
+  @apply font-display text-[2rem]/[2.8rem] text-white
 }
