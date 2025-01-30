@@ -213,7 +213,7 @@
       <img class="w-full absolute bottom-0 sm:translate-y-[35%] z-10" src="./assets/svg/hero-bottom.svg" alt="" />
     </section>
     <!-- Product -->
-    <section class="relative overflow-x-clip z-30 pt-16">
+    <section class="relative overflow-x-clip z-20 pt-16">
       <div class="relative z-20 max-w-base mx-auto px-3.5 lg:px-6">
         <div class="flex flex-col items-center gap-2 text-center">
           <h2
@@ -234,8 +234,9 @@
               </div>
               <img class="size-16 md:size-20 lg:size-28 xl:size-40 transition duration-200 group-hover:scale-110"
                 src="./assets/img/product-image.png" alt="Product Image">
-              <div class="z-10 bottom-0">
-                <!-- <img class="absolute z-10 left-0 bottom-0" src="./assets/img/lenta-center.png" alt="Lenta Center"> -->
+              <div
+                class="absolute -mx-2 z-10 bottom-0 opacity-0 transition duration-300 translate-y-28 ease-in-out group-hover:opacity-100 group-hover:translate-y-2">
+                <img class="w-full h-[4.625rem]" src="./assets/img/lenta-1.png" alt="Lenta Center">
               </div>
             </a>
             <div class="product-card__box absolute inset-0 z-10 size-full bg-[#D9D9D9]">
@@ -270,7 +271,7 @@
     </section>
 
     <!-- About The Game -->
-    <section class="relative pt-[4.5625rem] lg:pt-32">
+    <section class="relative z-30 pt-[4.5625rem] lg:pt-32">
       <div class="max-w-base mx-auto lg:px-6">
         <div class="relative about-box__border">
           <div class="relative z-20 size-full pt-7 pb-10 lg:py-14 px-8 lg:px-10 xl:px-[4.25rem]">
@@ -282,8 +283,7 @@
               <img class="h-3 md:h-5 lg:h-[30px]" src="./assets/svg/heading-line__right.svg" alt="">
             </div>
             <!-- Slider & Content -->
-            <div
-              class="relative grid lg:grid-cols-2 gap-y-4 md:gap-y-6 gap-x-6 2xl:gap-x-11 pt-6 md:pt-8 2xl:pt-12">
+            <div class="relative grid lg:grid-cols-2 gap-y-4 md:gap-y-6 gap-x-6 2xl:gap-x-11 pt-6 md:pt-8 2xl:pt-12">
               <!-- Slider -->
               <div class="shadow-custom__drop">
                 <div class="Slider h-64 md:h-80 lg:h-96 xl:h-[28.125rem] overflow-hidden">
@@ -327,7 +327,8 @@
               <!-- Prev -->
               <div
                 class="select-none prev cursor-pointer 2xl:absolute z-30 2xl:-translate-x-1/2 left-0 top-1/2 2xl:-translate-y-1/2 !shrink-0 bg-black-300/60 size-[3.125rem] lg:size-16 2xl:size-[5.625rem] rounded-full overflow-hidden p-[0.4375rem] transition duration-200 ease-in-out hover:shadow-custom">
-                <div class="relative flex items-center justify-center size-full border border-active-menu rounded-full">
+                <div
+                  class="relative flex items-center justify-center size-full border border-active-menu rounded-full border-glow">
                   <img class="w-4 lg:w-5 h-5 lg:h-6 xl:w-[1.875rem] xl:h-9" src="./assets/svg/prev.svg" alt="Prev" />
                 </div>
               </div>
@@ -340,7 +341,8 @@
               <!-- Next -->
               <div
                 class="select-none next cursor-pointer 2xl:absolute z-30 2xl:translate-x-1/2 right-0 top-1/2 2xl:-translate-y-1/2 !shrink-0 bg-black-300/60 size-[3.125rem] lg:size-16 2xl:size-[5.625rem] rounded-full overflow-hidden p-[0.4375rem] transition duration-200 ease-in-out hover:shadow-custom">
-                <div class="relative flex items-center justify-center size-full border border-active-menu rounded-full">
+                <div
+                  class="relative flex items-center justify-center size-full border border-active-menu rounded-full border-glow">
                   <img class="w-4 lg:w-5 h-5 lg:h-6 xl:w-[1.875rem] xl:h-9 rotate-180" src="./assets/svg/prev.svg"
                     alt="Prev" />
                 </div>
@@ -353,9 +355,181 @@
         </div>
       </div>
     </section>
+
+    <!-- Classes Section -->
+    <section class="pt-[4.1875rem] lg:pt-36">
+      <div>
+        <div class="relative flex items-center justify-center gap-0.5">
+          <img class="h-3 md:h-5 lg:h-[30px]" src="./assets/svg/heading-line.svg" alt="">
+          <h2
+            class="font-display font-bold text-2xl md:text-4xl lg:text-[3.125rem]/[4.375rem] text-base-blue uppercase">
+            классы
+          </h2>
+          <img class="h-3 md:h-5 lg:h-[30px]" src="./assets/svg/heading-line__right.svg" alt="">
+        </div>
+        <!-- Taps -->
+        <div class="h-[40.625rem] relative mt-24 py-10">
+          <div class="relative z-10 max-w-base mx-auto px-3.5 lg:px-6">
+            <!-- Info Classes -->
+            <div>
+              <div>
+                <img class="size-[4.375rem]" src="./assets/img/role-info.png" alt="role-info">
+                <div>
+                  <h5 class="font-mono font-semibold text-shadow text-white text-xs lg:text-lg 2xl:text-2xl">Человек</h5>
+                  <div class="flex items-center gap-2">
+                    <span class="font-manrope text-white">Damage</span>
+                  </div>
+                </div>
+              </div>
+              <p class="">
+                Присоединяйтесь к игрокам по всему миру на одном сервере. Переключайтесь между ландшафтным и портретным режимами по желанию.
+              </p>
+            </div>
+          </div>
+          <div class="absolute z-0 top-0 size-full flex -space-x-64">
+            <!-- Left Image -->
+            <img class="h-full relative z-0 object-cover" src="./assets/img/left-image.png" alt="Left Image">
+            <!-- Right Video -->
+            <div class="w-full relative">
+              <img class="relative z-10 w-full  h-full object-cover object-left" src="./assets/img/right-image.png"
+                alt="Left Image">
+              <div
+                class="absolute z-10 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 shrink-0 bg-black-300/60 size-[4.5625rem] rounded-full overflow-hidden p-[0.4375rem] secondary-hover">
+                <button
+                  class="videoPlay-btn relative flex items-center justify-center size-full border border-active-menu rounded-full">
+                  <img class="ml-1" src="./assets/svg/video-play.svg" alt="Play-video" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Media Video & Images -->
+    <section
+      class="bg-cover bg-no-repeat pt-[4.25rem] lg:pt-24 xl:pt-[7.6875rem] pb-11 lg:pb-20 xl:pb-[6.375rem] mt-16 lg:mt-32 2xl:mt-52"
+      style="background-image: url('./assets/img/media-bg.png');">
+      <div class="max-w-base mx-auto px-3.5 lg:px-6">
+        <div class="relative flex items-center justify-center gap-0.5">
+          <img class="h-3 md:h-5 lg:h-[30px]" src="./assets/svg/heading-line.svg" alt="">
+          <h2 class="font-display font-bold text-2xl md:text-4xl lg:text-[3.125rem]/[4.375rem] text-white uppercase">
+            медиа
+          </h2>
+          <img class="h-3 md:h-5 lg:h-[30px]" src="./assets/svg/heading-line__right.svg" alt="">
+        </div>
+        <!-- Taps  -->
+        <div class="flex justify-center gap-x-5 mt-6">
+          <button
+            class="tap-btn flex items-center justify-center gap-3 max-w-[16.75rem] w-full h-9 md:h-12 xl:h-[60px] relative rounded-full overflow-hidden bg-white text-[#4F80B1] px-5 xl:px-10">
+            <span
+              class="relative z-10 font-manrope font-semibold text-[0.8531rem]/[1.195rem] md:text-base xl:text-xl/[1.7075rem]">Предрегистрация</span>
+          </button>
+          <button
+            class="flex items-center justify-center gap-3 max-w-[16.75rem] w-full h-9 md:h-12 xl:h-[60px] relative rounded-full overflow-hidden bg-base-blue text-white px-5 xl:px-10">
+            <span
+              class="relative z-10 font-manrope font-semibold text-[0.8531rem]/[1.195rem] md:text-base xl:text-xl/[1.7075rem]">Видео</span>
+          </button>
+        </div>
+        <!-- Card -->
+        <div class="mt-6 md:mt-10 xl:mt-[4.125rem]">
+          <!-- Images -->
+          <div class="images">
+            <div
+              class="grid md:grid-cols-2 xl:grid-cols-3 gap-x-6 lg:gap-x-10 2xl:gap-x-16 gap-y-3 md:gap-y-6 2xl:gap-y-10">
+              <!-- 1 -->
+              <div class="cursor-pointer relative image-video__card">
+                <div class="relative z-10 overflow-hidden h-56 xl:h-[17.5rem] image-video__product">
+                  <img class="size-full object-cover" src="./assets/img/image-product.png" alt="Image">
+                </div>
+              </div>
+              <!-- 1 -->
+              <div class="cursor-pointer relative image-video__card">
+                <div class="relative z-10 overflow-hidden h-56 xl:h-[17.5rem] image-video__product">
+                  <img class="size-full object-cover" src="./assets/img/image-product.png" alt="Image">
+                </div>
+              </div>
+              <!-- 1 -->
+              <div class="cursor-pointer relative image-video__card">
+                <div class="relative z-10 overflow-hidden h-56 xl:h-[17.5rem] image-video__product">
+                  <img class="size-full object-cover" src="./assets/img/image-product.png" alt="Image">
+                </div>
+              </div>
+              <!-- 1 -->
+              <div class="cursor-pointer relative image-video__card">
+                <div class="relative z-10 overflow-hidden h-56 xl:h-[17.5rem] image-video__product">
+                  <img class="size-full object-cover" src="./assets/img/image-product.png" alt="Image">
+                </div>
+              </div>
+              <!-- 1 -->
+              <div class="cursor-pointer relative image-video__card">
+                <div class="relative z-10 overflow-hidden h-56 xl:h-[17.5rem] image-video__product">
+                  <img class="size-full object-cover" src="./assets/img/image-product.png" alt="Image">
+                </div>
+              </div>
+              <!-- 1 -->
+              <div class="cursor-pointer relative image-video__card">
+                <div class="relative z-10 overflow-hidden h-56 xl:h-[17.5rem] image-video__product">
+                  <img class="size-full object-cover" src="./assets/img/image-product.png" alt="Image">
+                </div>
+              </div>
+            </div>
+            <!-- Prev & Next & Patination -->
+            <div class="relative flex items-center justify-center gap-x-12 lg:gap-x-8 mt-9 xl:mt-[3.875rem]">
+              <!-- Prev -->
+              <div
+                class="cursor-pointer !shrink-0 bg-black-300/60 size-[3.125rem] lg:size-16 2xl:size-[5.625rem] rounded-full overflow-hidden p-[0.4375rem] transition duration-200 ease-in-out hover:shadow-custom">
+                <div
+                  class="border-glow relative flex items-center justify-center size-full border border-active-menu rounded-full">
+                  <img class="w-4 lg:w-5 h-5 lg:h-6 xl:w-[1.875rem] xl:h-9" src="./assets/svg/prev.svg" alt="Prev" />
+                </div>
+              </div>
+              <!-- Pagination Mobile -->
+              <div class="image-pagination flex items-center">
+                <p class="font-display 2xl:font-bold text-[2rem]/[2.8rem] 2xl:text-[3.125rem]/[4.375rem] text-white">
+                  1/<span>2</span></p>
+              </div>
+              <!-- Next -->
+              <div
+                class="cursor-pointer !shrink-0 bg-black-300/60 size-[3.125rem] lg:size-16 2xl:size-[5.625rem] rounded-full overflow-hidden p-[0.4375rem] transition duration-200 ease-in-out hover:shadow-custom">
+                <div
+                  class="border-glow relative flex items-center justify-center size-full border border-active-menu rounded-full">
+                  <img class="w-4 lg:w-5 h-5 lg:h-6 xl:w-[1.875rem] xl:h-9 rotate-180" src="./assets/svg/prev.svg"
+                    alt="Prev" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <!-- Footer -->
-  <footer></footer>
+  <footer class="bg-black-200 pt-[3.3125rem] md:pt-20 xl:pt-[6.25rem] pb-16 md:pb-24  xl:pb-36">
+    <div
+      class="max-w-base flex flex-col lg:flex-row items-center lg:items-start gap-x-5 gap-y-10 justify-between mx-auto px-3.5 lg:px-6">
+      <div>
+        <img class="h-10 md:h-16 xl:h-20" src="./assets/svg/bottom_logo.svg" alt="">
+        <p class="hidden lg:block font-manrope text-[#484848] text-3xl/[2.5063rem] mt-8">All rights reserved</p>
+      </div>
+      <div
+        class="text-center lg:text-left max-w-[28.125rem] xl:max-w-[31.75rem] flex flex-col lg:flex-row flex-wrap items-center lg:items-start gap-x-16 gap-y-7 2xl:gap-y-12 text-[#8C8C8C]">
+        <a class="text-2xl xl:text-[2rem]/[2.8rem] transition duration-200 hover:opacity-75" href="#">
+          Terms of Service
+        </a>
+        <a class="text-2xl xl:text-[2rem]/[2.8rem] transition duration-200 hover:opacity-75" href="#">
+          Privacy Policy
+        </a>
+        <a class="text-2xl xl:text-[2rem]/[2.8rem] transition duration-200 hover:opacity-75" href="#">
+          About Us
+        </a>
+        <a class="text-2xl xl:text-[2rem]/[2.8rem] transition duration-200 hover:opacity-75" href="#">
+          Contact Us
+        </a>
+      </div>
+      <p class="block lg:hidden font-manrope text-[#484848] text-3xl/[2.5063rem] mt-2.5">All rights reserved</p>
+    </div>
+  </footer>
   <!-- Scripts -->
   <script src="./js/script.js"></script>
 </body>
