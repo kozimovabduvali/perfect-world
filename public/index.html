@@ -235,7 +235,7 @@
               <img class="size-16 md:size-20 lg:size-28 xl:size-40 transition duration-200 group-hover:scale-110"
                 src="./assets/img/product-image.png" alt="Product Image">
               <div
-                class="absolute -mx-2 z-10 bottom-0 opacity-0 transition duration-300 translate-y-28 ease-in-out group-hover:opacity-100 group-hover:translate-y-2">
+                class="absolute -mx-2 -z-10 bottom-0 opacity-0 transition duration-300 translate-y-28 ease-in-out group-hover:opacity-100 group-hover:translate-y-2 group-hover:z-10 clear-none">
                 <img class="w-full h-[4.625rem]" src="./assets/img/lenta-1.png" alt="Lenta Center">
               </div>
             </a>
@@ -246,7 +246,7 @@
         </div>
 
         <!-- Progress Bar -->
-        <div>
+        <div class="relative z-[5]">
           <div class="flex justify-between font-manrope md:text-xl lg:text-[1.75rem]/[2.45rem] text-base-blue mt-7">
             <span>Количество предрегистраций:</span>
             <span class="font-bold text-xl lg:text-[1.75rem]/[2.45rem]">500,233%</span>
@@ -371,19 +371,38 @@
         <div class="h-[40.625rem] relative mt-24 py-10">
           <div class="relative z-10 max-w-base mx-auto px-3.5 lg:px-6">
             <!-- Info Classes -->
-            <div>
-              <div>
+            <div class="max-w-[24.5625rem]">
+              <div class="flex items-center gap-x-8">
                 <img class="size-[4.375rem]" src="./assets/img/role-info.png" alt="role-info">
                 <div>
-                  <h5 class="font-mono font-semibold text-shadow text-white text-xs lg:text-lg 2xl:text-2xl">Человек</h5>
-                  <div class="flex items-center gap-2">
-                    <span class="font-manrope text-white">Damage</span>
+                  <h5 class="font-mono font-semibold text-shadow text-white text-xs lg:text-lg 2xl:text-2xl">Человек
+                  </h5>
+                  <div class="">
+                    <div class="flex items-center gap-2 shadow-custom__left">
+                      <span class="font-manrope text-white">Damage</span>
+                    </div>
+                    <div class="flex items-center gap-2 shadow-custom__left">
+                      <span class="font-manrope text-white">AOE</span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <p class="">
-                Присоединяйтесь к игрокам по всему миру на одном сервере. Переключайтесь между ландшафтным и портретным режимами по желанию.
+              <p class="text-white text-[0.5rem] md:text-xs xl:text-base mt-6 lg:mt-12">
+                Присоединяйтесь к игрокам по всему миру на одном сервере. Переключайтесь между ландшафтным и портретным
+                режимами по желанию.
               </p>
+
+              <div class="max-w-56 font-manrope text-white mt-8 md:mt-20 xl:mt-[6.4375rem] space-y-1">
+                <div class="inline-flex gap-x-[4.375rem]">
+                  <p class="text-[0.9063rem]/[1.2688rem]">Здоровье</p>
+                  <p class="text-[0.9063rem]/[1.2688rem]">Кооперация</p>
+                </div>
+                <img class="mx-auto w-12 md:w-[4.6875rem] xl:w-[6.1875rem] h-[3.1875rem] md:h-20 xl:h-[6.5625rem]" src="./assets/svg/role.svg" alt="Role">
+                <div class="flex justify-end gap-x-[4.375rem]">
+                  <p class="text-[0.9063rem]/[1.2688rem]">Дамаг</p>
+                  <p class="text-[0.9063rem]/[1.2688rem]">Сложность</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="absolute z-0 top-0 size-full flex -space-x-64">
@@ -402,6 +421,8 @@
               </div>
             </div>
           </div>
+          <!-- Taps Buttons -->
+          <div class="absolute left-1/2 -translate-x-1/2 bottom-0 translate-y-1/2 bg-[#050505B2]/70 backdrop-blur-[1.4563rem] w-[64.0625rem] h-32 rounded-full px-2.5 py-2"></div>
         </div>
       </div>
     </section>
